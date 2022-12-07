@@ -1,0 +1,22 @@
+{
+  "name": "jwjbackend",
+  "version": "1.0.0",
+  "description": "jwt nodejs react",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
+  },
+  "author": "NguyenJs Nguyen Trung Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "7.15.4",
+    "@babel/node": "7.15.4",
+    "@babel/preset-env": "7.15.4",
+    "body-parser": "^1.20.1",
+    "dotenv": "10.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
