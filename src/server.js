@@ -1,5 +1,5 @@
 import express from 'express';
-import configViewEngine from './configs/viewEngine';
+import configViewEngine from './config/viewEngine';
 import initWebRouter from './routes/web';
 // require('dotenv').config(); // Đang lỗi phiên bản node 18.. dòng ngày
 import bodyParser from 'body-parser';
