@@ -14,6 +14,9 @@ const initWebRouter = app => {
 	router.get('/user', homeController.handleUserPage);
 	router.post('/users/create-user', homeController.handleCreateNewUser);
 	router.post('/delete-user/:id', homeController.handDeleteUser);
+	router.get('/update-user/:id', homeController.getUpdateUserPage);
+	router.post('/user/update-user', homeController.handleUpdateUserPage);
+
 
 	return app.use('/', router);
 };
