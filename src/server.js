@@ -3,6 +3,7 @@ import configViewEngine from './config/viewEngine';
 import initWebRouter from './routes/web';
 // require('dotenv').config(); // Đang lỗi phiên bản node 18.. dòng ngày
 import bodyParser from 'body-parser';
+// import connection from './config/connectDB';
 
 
 const app = express();
@@ -14,6 +15,9 @@ configViewEngine(app);
 //	config body parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+//test connection DB
+// connection();
 
 //init web routes
 initWebRouter(app);
