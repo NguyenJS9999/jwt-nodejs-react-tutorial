@@ -13,7 +13,7 @@ module.exports = {
 		 */
 
 		await queryInterface.bulkInsert(
-			'Users',
+			'User',
 			[
 				{
 					email: 'John Doe',
@@ -36,11 +36,6 @@ module.exports = {
 	},
 
 	down: async (queryInterface, Sequelize) => {
-		/**
-		 * Add commands to revert seed here.
-		 *
-		 * Example:
-		 * await queryInterface.bulkDelete('People', null, {});
-		 */
+		await queryInterface.bulkDelete('User');
 	}
 };
